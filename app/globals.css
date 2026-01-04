@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  /* Fondos */
+  --bg-primary: #0A0A0A;
+  /* Negro profundo - fondo principal */
+  --bg-secondary: #111111;
+  /* Negro elevado - cards, secciones */
+  --bg-tertiary: #1A1A1A;
+  /* Negro más claro - hovers, bordes */
+
+  /* Colores de acento */
+  --accent-primary: #F5A623;
+  /* Amarillo/Dorado - CTAs, highlights, enlaces */
+  --accent-secondary: #22C55E;
+  /* Verde lima - indicadores, badges activos */
+
+  /* Texto */
+  --text-primary: #FFFFFF;
+  /* Blanco puro - títulos, texto principal */
+  --text-secondary: #888888;
+  /* Gris medio - subtítulos, labels */
+  --text-muted: #555555;
+  /* Gris oscuro - texto terciario */
+
+  /* Estados */
+  --hover-glow: rgba(245, 166, 35, 0.15);
+  /* Glow dorado para hovers */
+  --border-subtle: #222222;
+  /* Bordes sutiles */
+}
+
+@theme {
+  --color-bg-primary: var(--bg-primary);
+  --color-bg-secondary: var(--bg-secondary);
+  --color-bg-tertiary: var(--bg-tertiary);
+
+  --color-accent-primary: var(--accent-primary);
+  --color-accent-secondary: var(--accent-secondary);
+
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+
+  --color-border-subtle: var(--border-subtle);
+
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-outfit);
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans), sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Utilities */
+.glass-panel {
+  background: rgba(10, 10, 10, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+::selection {
+  background: var(--accent-primary);
+  color: var(--bg-primary);
+}

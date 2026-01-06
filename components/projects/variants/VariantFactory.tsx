@@ -5,6 +5,7 @@ import { QuantLayout } from "./QuantLayout";
 import { NetworkLayout } from "./NetworkLayout";
 import { ConstructLayout } from "./ConstructLayout";
 import { InterfaceLayout } from "./InterfaceLayout";
+import { CaseStudyLayout } from "./CaseStudyLayout";
 
 export interface VariantProps {
     project: Project;
@@ -21,6 +22,8 @@ export function VariantFactory({ project, index }: VariantProps) {
             return <ConstructLayout project={project} index={index} />;
         case "interface":
             return <InterfaceLayout project={project} index={index} />;
+        case "case-study":
+            return <CaseStudyLayout project={project} />;
         default:
             return <QuantLayout project={project} index={index} />;
     }

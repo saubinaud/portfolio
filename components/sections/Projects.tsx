@@ -26,7 +26,9 @@ export default function Projects() {
 
             <div className="space-y-0 relative z-10">
                 {projects.map((project, index) => (
-                    <ProjectChapter key={project.id} project={project} index={index} />
+                    <ParallaxWrapper key={project.id} offset={50} className="relative z-10">
+                        <ProjectChapter project={project} index={index} />
+                    </ParallaxWrapper>
                 ))}
             </div>
         </section>

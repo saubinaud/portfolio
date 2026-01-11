@@ -1,64 +1,41 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/Button";
-import TextReveal from "@/components/animations/TextReveal";
-import { Mail, Calendar, Linkedin, Github } from "lucide-react";
+import { Mail, Linkedin, Github } from "lucide-react";
 
 export default function Contact() {
     return (
-        <section id="contact" className="py-32 bg-bg-primary relative overflow-hidden">
-            {/* Background Glow */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-accent-primary/5 rounded-full blur-[120px] pointer-events-none" />
+        <footer id="contact" className="py-12 bg-bg-primary border-t border-border-subtle">
+            <div className="container mx-auto px-6">
+                <div className="flex flex-col md:flex-row justify-between items-center gap-6">
 
-            <div className="container mx-auto px-6 relative z-10 text-center">
-                <div className="max-w-3xl mx-auto space-y-8">
-                    <Badge variant="active" className="mx-auto">Let's Build Something</Badge>
+                    {/* Identity / Copyright */}
+                    <div className="text-center md:text-left">
+                        <h4 className="font-display font-bold text-lg text-text-primary">Sebastien Aubinaud</h4>
+                        <p className="text-text-muted text-sm mt-1">Growth Engineer • Lima, Peru</p>
+                    </div>
 
-                    <h2 className="text-5xl md:text-7xl font-display font-bold tracking-tight">
-                        Have a growth challenge?
-                    </h2>
-
-                    <p className="text-xl text-text-secondary max-w-xl mx-auto">
-                        I'm selective about projects, but always open to interesting conversations.
-                        Whether it's database architecture or a scaling strategy.
-                    </p>
-
-                    <div className="pt-8 flex flex-col items-center gap-6">
+                    {/* Quick Links */}
+                    <div className="flex items-center gap-8">
                         <a
                             href="mailto:contact@nodumstudio.com"
-                            className="text-2xl md:text-4xl font-display font-bold hover:text-accent-primary transition-colors border-b-2 border-transparent hover:border-accent-primary pb-1"
+                            className="text-text-secondary hover:text-accent-primary transition-colors text-sm font-medium"
                         >
                             contact@nodumstudio.com
                         </a>
 
                         <div className="flex gap-4">
-                            <Button size="lg" className="gap-2" onClick={() => window.open('https://calendly.com/', '_blank')}>
-                                <Calendar className="w-4 h-4" />
-                                Schedule a Call
-                            </Button>
-                        </div>
-
-                        <div className="flex gap-6 mt-8">
-                            <a href="https://linkedin.com" target="_blank" className="text-text-secondary hover:text-white transition-colors">
-                                <Linkedin className="w-6 h-6" />
+                            <a href="https://linkedin.com/in/sebastien-aubinaud" target="_blank" className="text-text-muted hover:text-white transition-colors">
+                                <Linkedin className="w-5 h-5" />
                             </a>
-                            <a href="https://github.com" target="_blank" className="text-text-secondary hover:text-white transition-colors">
-                                <Github className="w-6 h-6" />
-                            </a>
-                            <a href="mailto:contact@nodumstudio.com" className="text-text-secondary hover:text-white transition-colors">
-                                <Mail className="w-6 h-6" />
+                            <a href="https://github.com" target="_blank" className="text-text-muted hover:text-white transition-colors">
+                                <Github className="w-5 h-5" />
                             </a>
                         </div>
-
-                        <p className="text-sm text-text-muted mt-8">
-                            Based in: Lima, Peru | Open to remote work worldwide
-                        </p>
                     </div>
+
                 </div>
             </div>
-        </section>
+        </footer>
     );
 }
-
-import Badge from "@/components/ui/Badge";

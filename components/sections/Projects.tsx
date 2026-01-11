@@ -7,7 +7,7 @@ import ParallaxWrapper from "@/components/animations/ParallaxWrapper";
 
 export default function Projects() {
     return (
-        <section id="work" className="py-24 bg-bg-primary relative">
+        <section id="work" className="py-32 bg-bg-primary relative">
             {/* Background Elements */}
             <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-bg-secondary/20 to-transparent pointer-events-none" />
 

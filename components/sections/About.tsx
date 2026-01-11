@@ -79,6 +79,30 @@ export default function About() {
                     </ParallaxWrapper>
                 </div>
 
+                {/* Block 3: Education & Context (Cross-Continental Builder) */}
+                <div className="py-24 border-t border-border-subtle/50">
+                    <ParallaxWrapper offset={-10}>
+                        <div className="max-w-4xl mx-auto space-y-8">
+                            <span className="text-accent-primary font-mono text-sm tracking-widest block mb-4">04 / CROSS-CONTINENTAL BUILDER</span>
+
+                            <h3 className="text-2xl md:text-3xl text-text-primary leading-tight font-light">
+                                Bridging disciplines with a dual degree in <strong className="font-bold text-white">Administration & Marketing</strong> (ESAN) and <strong className="font-bold text-white">International Business</strong> (YSchools SCBS).
+                            </h3>
+
+                            <p className="text-lg text-text-secondary leading-relaxed max-w-3xl">
+                                My background goes beyond academia. It is a proof of adaptability. I combine commercial strategy with technical execution to build infrastructure that scales across diverse markets.
+                            </p>
+
+                            <div className="pt-4 text-base text-text-muted">
+                                <span className="inline-flex items-center gap-2">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-accent-primary"></span>
+                                    <strong className="text-text-primary">Based in:</strong> Lima
+                                </span>
+                            </div>
+                        </div>
+                    </ParallaxWrapper>
+                </div>
+
                 {/* Block 4: Transition to Work */}
                 <div className="py-24 flex justify-center">
                     <ParallaxWrapper offset={20}>

@@ -135,7 +135,7 @@ export const projects: Project[] = [
             primary: "#F5A623", // Orange
             secondary: "#4A90E2",
         },
-        layout: "case-study",
+        layout: "quant",
         description: "TallyTown needed to optimize marketing spend and predict which users would convert from free trial to paid.",
         challenge: "High churn in a 7-day trial ($4.99/user). 1.71% conversion rate meant marketing wasted budget on low-intent users.",
         approach: [
@@ -289,7 +289,7 @@ export const projects: Project[] = [
             primary: "#22C55E", // Green
             secondary: "#10B981",
         },
-        layout: "case-study",
+        layout: "network",
         description: "Designed and executed a marketing campaign to acquire adult learners from English-speaking African communities.",
         challenge: "Launch a pan-African marketing campaign for a free 15-hour IBM-certified AI course. The goal: Acquire 8,000-12,000 verified learners from English-speaking countries (Nigeria, Kenya, Ghana, South Africa) with a strict budget cap of $2.00 per acquisition.",
         approach: [
@@ -431,7 +431,7 @@ export const projects: Project[] = [
             primary: "#A855F7", // Purple
             secondary: "#D946EF",
         },
-        layout: "case-study",
+        layout: "quant",
         description: "Diagnosing why an AI marketing course was invisible to ChatGPT, Perplexity, and Google AI Overviews—and providing the technical roadmap to fix it.",
         challenge: "Vibe Combinator, a cutting-edge AI marketing course, was nearly invisible to the very tools it taught. Searches on Perplexity or ChatGPT for 'Vibe Coding course' returned generic results instead of the brand.",
         approach: [
@@ -558,7 +558,7 @@ export const projects: Project[] = [
             primary: "#EC4899", // Pink/Red from brand
             secondary: "#F05B19", // Brand Orange
         },
-        layout: "case-study",
+        layout: "construct",
         description: "Transformed a taekwondo academy's operations from chaotic Google Sheets to a scalable PostgreSQL system.",
         challenge: "A traditional academy drowned in manual admin. Student tracking and payments were scattered across 12 discordant Google Sheets, costing the owner 15+ hours/week.",
         approach: [
@@ -693,7 +693,7 @@ WHERE i.activa = true
             primary: "#3B82F6", // Blue
             secondary: "#6366F1",
         },
-        layout: "case-study",
+        layout: "interface",
         description: "A headless interface that connects directly to your existing PostgreSQL database and transforms it into a modern CRM.",
         challenge: "Companies with production databases are tool-poor. Sales teams beg for SQL queries, Support uses ugly admin panels, and Ops exports to spreadsheets. Building internal tools takes months.",
         approach: [

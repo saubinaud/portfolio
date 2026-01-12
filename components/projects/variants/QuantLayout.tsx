@@ -69,11 +69,22 @@ export function QuantLayout({ project, index }: { project: Project; index: numbe
                                 <div className="flex flex-col h-full justify-center max-w-6xl mx-auto">
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                                         <div className="order-2 md:order-1">
-                                            <Badge variant="outline" className="mb-6 border-orange-500/50 text-orange-400 bg-orange-500/10">PERFORMANCE METRIC</Badge>
-                                            <h1 className="text-6xl md:text-[6rem] font-bold tracking-tighter text-white leading-[0.9] mb-8 break-words">
-                                                {project.metrics[0]?.split(" ")[0]}<span className="text-3xl md:text-5xl text-orange-500">%</span>
+                                            <Badge variant="outline" className="mb-6 border-orange-500/50 text-orange-400 bg-orange-500/10">CASE STUDY</Badge>
+
+                                            <h1 className="text-5xl md:text-7xl font-bold tracking-tighter text-white leading-[1.1] mb-6">
+                                                {project.title}
                                             </h1>
-                                            <p className="text-xl md:text-2xl text-white/50 mt-6 md:pl-4 border-l-2 border-orange-500/30">
+
+                                            <div className="flex items-baseline gap-4 mb-8">
+                                                <span className="text-4xl md:text-5xl font-mono font-bold text-orange-500">
+                                                    {project.metrics[0]?.split(" ")[0]}
+                                                </span>
+                                                <span className="text-lg text-white/40 uppercase tracking-widest">
+                                                    Impact Metric
+                                                </span>
+                                            </div>
+
+                                            <p className="text-xl md:text-2xl text-white/60 md:pl-4 border-l-2 border-orange-500/30">
                                                 {project.tagline}
                                             </p>
                                         </div>
